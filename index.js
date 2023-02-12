@@ -1,5 +1,6 @@
-const { app, BrowserWindow, shell } = require('electron')
-const { exec } = require("child_process");
+const { app, BrowserWindow, shell } = require('electron');
+
+const sqlplus = require ("./js/sqlplus");
 
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -10,17 +11,7 @@ const createWindow = () => {
   win.loadFile('index.html')
 }
 
-exec("dir > log.txt", (error, stdout, stderr) => {
-    if (error) {
-        console.log(`error: ${error.message}`);
-        return;
-    }
-    if (stderr) {
-        console.log(`stderr: ${stderr}`);
-        return;
-    }
-    console.log(`stdout: ${stdout}`);
-});
+sqlplus();
 
 app.whenReady().then(() => {
   createWindow()
