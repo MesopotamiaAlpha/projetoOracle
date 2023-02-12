@@ -1,0 +1,14 @@
+{
+  "name": "projetooracle",
+  "version": "1.0.0",
+  "description": "Projeto sendo desenvolvido para facilitar o dia a dia para restaurar bancos de dados",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "José Antonio",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^6.1.12"
+  }
+}
