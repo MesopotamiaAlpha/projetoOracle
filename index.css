@@ -11,3 +11,10 @@
     flex-direction: column;
     background-color: blueviolet;
 }
+
+.areaLog{
+    display:flex;
+    align-items: start;
+    position:relative;
+    background-color: rgb(41, 40, 40);
+}
