@@ -1,4 +1,5 @@
 node_modules
+teste-win32-x64
 
 # local env files
 .env

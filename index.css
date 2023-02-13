@@ -1,5 +1,13 @@
 .corpo{
     display: flex;
     align-items: center;
+    flex-direction: column;
     background-color: aquamarine;
+}
+
+.corpo2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: blueviolet;
 }

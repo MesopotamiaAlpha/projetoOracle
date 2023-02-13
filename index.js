@@ -1,5 +1,5 @@
 const { app, BrowserWindow, shell } = require('electron');
-
+const timezone = require ("./js/timezone");
 const sqlplus = require ("./js/sqlplus");
 
 const createWindow = () => {
@@ -11,7 +11,8 @@ const createWindow = () => {
   win.loadFile('index.html')
 }
 
-sqlplus();
+//sqlplus();
+//timezone();
 
 app.whenReady().then(() => {
   createWindow()

@@ -1,8 +1,8 @@
 const { exec } = require("child_process");
 
 
-function sqlplus() {
-    exec("sqlplus viasoft/viasoftmcp as sysdba > Log1.txt", (error, stdout, stderr) => {
+function timezone() {
+    exec("select * from all_directories; > log2.txt", (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
             return;
@@ -15,4 +15,4 @@ function sqlplus() {
     });
 }
 
-module.exports = sqlplus ;
+module.exports = timezone ;
