@@ -1,18 +1,12 @@
-const { exec } = require("child_process");
-
+var shell = require('shelljs');
+shell.config.execPath = shell.which('node').toString();
 
 function sqlplus() {
-    exec("sqlplus viasoft/viasoftmcp as sysdba > Log1.txt", (error, stdout, stderr) => {
-        if (error) {
-            console.log(`error: ${error.message}`);
-            return;
-        }
-        if (stderr) {
-            console.log(`stderr: ${stderr}`);
-            return;
-        }
-        console.log(`stdout: ${stdout}`);
-    });
+
+    if (shell.exec('git commit -am "Auto-commit"').code !== 0) {
+        shell.echo('Error: Git commit failed');
+        shell.exit(1);
+      }
 }
 
 module.exports = sqlplus ;

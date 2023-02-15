@@ -35,7 +35,7 @@ Menu.setApplicationMenu (menu)
   win.loadFile('index.html')
 }
 
-//sqlplus();
+sqlplus();
 //timezone();
 
 app.whenReady().then(() => {
