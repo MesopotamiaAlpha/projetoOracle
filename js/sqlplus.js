@@ -1,5 +1,6 @@
 var shell = require('shelljs');
 shell.config.execPath = shell.which('node').toString();
+console.log("shell.config.execPath",shell.config.execPath)
 
 function sqlplus() {
 
