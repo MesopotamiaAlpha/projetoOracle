@@ -9,9 +9,6 @@
   "author": "José Antonio",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^6.1.12"
-  },
-  "dependencies": {
-    "shelljs": "^0.8.5"
+    "electron": "^23.1.0"
   }
 }

@@ -1,13 +1,21 @@
-var shell = require('shelljs');
-shell.config.execPath = shell.which('node').toString();
-console.log("shell.config.execPath",shell.config.execPath)
+/*
+Este arquivo é destinado a fazer a conexão ao sqlplus, o material de apoio que estou usando está dentro do readme do site stackabuse
+*/
+const { exec } = require("child_process");
 
 function sqlplus() {
 
-    if (shell.exec('git commit -am "Auto-commit"').code !== 0) {
-        shell.echo('Error: Git commit failed');
-        shell.exit(1);
-      }
+  exec("dir", (error, stdout, stderr) => {
+    if (error) {
+        console.log(`error: ${error.message}`);
+        return;
+    }
+    if (stderr) {
+        console.log(`stderr: ${stderr}`);
+        return;
+    }
+    console.log(`stdout: ${stdout}`);
+});
 }
 
 module.exports = sqlplus ;
