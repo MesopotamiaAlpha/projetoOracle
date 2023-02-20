@@ -1,5 +1,14 @@
 # ProjetoOracle
 
+## Dependencias
+Para estre projeto é necessário fazer o download do [nodejs](https://nodejs.org/en/download/) , depois de ter feito o donwload e instalado abarao cmd e confira se esta instalado corretamente com estes comandos:
+``` 
+node -v
+npm -v
+```
+Caso exibir a versão instalada então está correto, siga agora mais para baixo que tem o comando npm para instalar as dependencias do projeto e como rodar ele.
+
+
 Este projeto vai ter 2 módulos, o primeiro módulo vai ser para o programa fazer a atualização do timezone automaticamente.
 O segundo múdulo vai ser direcionado para a restauração de backup.
 
@@ -30,6 +39,10 @@ Para finalizar vamos direcionar o nome do EXP_DIR.
 
 Material de apoio para o desenvolvimento do projeto:  
 
+Comando para instalar o projeto:
+```
+    npm install
+```
 
 Comando para rodar o projeto:
 ```
