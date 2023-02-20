@@ -7,10 +7,10 @@ O segundo múdulo vai ser direcionado para a restauração de backup.
 
 Então este módulo vai ser a seguinte sequencia:
 
-- [] Ter um checkbox onde pergunta se deve copiar os arquivos do timezone ou não
-- [] Um campo para colocar o usuario e senha da instancia
-- [] Ao iniciar o ajuste do timezone ele vai se conectar ao sqlplus com o usuario e senha
-- [] Vai começar a usar todos os comandos sql para trocar o timezone de 32 para 36
+- [ ] Ter um checkbox onde pergunta se deve copiar os arquivos do timezone ou não
+- [ ] Um campo para colocar o usuario e senha da instancia
+- [ ] Ao iniciar o ajuste do timezone ele vai se conectar ao sqlplus com o usuario e senha
+- [ ] Vai começar a usar todos os comandos sql para trocar o timezone de 32 para 36
 
 
 ## Módulo Restauração de Backup
@@ -20,13 +20,13 @@ Primeiro ele vai dropar todas as tablespaces que já existe nesta instancia, no 
 Depois disso ele vai criar os usuarios do banco da empresa.
 Para finalizar vamos direcionar o nome do EXP_DIR.
 
-- [] Um campo para direcionar em qual caminho está o banco a ser restaurado
-- [] Colocar o nome da instancia que vai ser dropada
-- [] Campo para escrever o usuario e senha da instancia
-- [] Inicia dropando as instancias que possue
-- [] Checkbox para escolher entre a tablespace normal ou a big
-- [] Começa a executar a criação de usuarios da empresa
-- [] Cria o caminho EXP_DIR
+- [ ] Um campo para direcionar em qual caminho está o banco a ser restaurado
+- [ ] Colocar o nome da instancia que vai ser dropada
+- [ ] Campo para escrever o usuario e senha da instancia
+- [ ] Inicia dropando as instancias que possue
+- [ ] Checkbox para escolher entre a tablespace normal ou a big
+- [ ] Começa a executar a criação de usuarios da empresa
+- [ ] Cria o caminho EXP_DIR
 
 Material de apoio para o desenvolvimento do projeto:  
 
