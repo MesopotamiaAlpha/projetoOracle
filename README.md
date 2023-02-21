@@ -18,6 +18,9 @@ Então este módulo vai ser a seguinte sequencia:
 
 - [ ] Ter um checkbox onde pergunta se deve copiar os arquivos do timezone ou não
 - [ ] Um campo para colocar o usuario e senha da instancia
+- [ ] Para a instancia pelo services para copiar os arquivos caso precise
+- [ ] Fazer a copia dos arquivos do timezone
+- [ ] Iniciar novamente a instancia
 - [ ] Ao iniciar o ajuste do timezone ele vai se conectar ao sqlplus com o usuario e senha
 - [ ] Vai começar a usar todos os comandos sql para trocar o timezone de 32 para 36
 
