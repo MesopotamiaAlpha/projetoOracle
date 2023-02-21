@@ -1,20 +1,47 @@
-.corpo{
-    display: flex;
+.corpoGeral {
+    display: inline-flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.cardTimezone {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
     background-color: aquamarine;
 }
 
-.corpo2{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: blueviolet;
+/* On mouse-over, add a deeper shadow */
+.cardcardTimezone:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.areaLog{
-    display:flex;
-    align-items: start;
-    position:relative;
+/* Add some padding inside the card container */
+.containerTimezone {
+    padding: 2px 16px;
+}
+
+.cardBanco {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: blueviolet;
+    justify-content: space-around;
+}
+
+/* On mouse-over, add a deeper shadow */
+.cardcardBanco:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.containerBanco {
+    padding: 2px 16px;
+}
+
+.areaLog {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
     background-color: rgb(41, 40, 40);
 }
